@@ -16,9 +16,21 @@ from typing import Dict, List, Tuple, Any, Optional
 from dataclasses import dataclass
 from collections import defaultdict, Counter
 import fitz  # PyMuPDF
-from sentence_transformers import SentenceTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+from datetime import datetime
+
+# Set environment variables for offline mode
+os.environ['TRANSFORMERS_OFFLINE'] = '1'
+os.environ['HF_DATASETS_OFFLINE'] = '1'
+os.environ['HF_HUB_OFFLINE'] = '1'
+
+try:
+    from sentence_transformers import SentenceTransformer
+    from sklearn.metrics.pairwise import cosine_similarity
+except ImportError as e:
+    print(f"Error importing required packages: {e}")
+    print("Please install the required packages using:")
+    print("pip install -r requirements.txt")
+    exit(1)
 
 # Configure logging
 logging.basicConfig(
@@ -58,8 +70,16 @@ class DocumentAnalyzer:
         self.sections: List[DocumentSection] = []
         
         # Initialize the embedding model
-        logging.info(f"Loading model: {MODEL_NAME}")
-        self.model = SentenceTransformer(MODEL_NAME)
+        try:
+            print(f"Loading model: {MODEL_NAME}")
+            self.model = SentenceTransformer(MODEL_NAME)
+            print("Model loaded successfully")
+        except Exception as e:
+            print(f"Error loading model: {e}")
+            print("Please ensure the model is downloaded and available locally.")
+            print("You can download it using:")
+            print(f"python -c \"from sentence_transformers import SentenceTransformer; SentenceTransformer('{MODEL_NAME}')\"")
+            raise
         
     def extract_text_from_pdf(self, pdf_path: Path) -> List[DocumentSection]:
         """Extract text sections from a PDF file."""
@@ -141,15 +161,35 @@ class DocumentAnalyzer:
         if not pdf_dir.exists():
             raise FileNotFoundError(f"PDFs directory not found: {pdf_dir}")
         
-        # Find all PDFs in the collection
+        # Get all PDFs from the PDFs directory
         pdf_files = list(pdf_dir.glob("*.pdf"))
         if not pdf_files:
-            raise FileNotFoundError(f"No PDF files found in {pdf_dir}")
+            logging.error(f"No PDF files found in {pdf_dir}")
+            return
         
-        # Extract text from all PDFs
-        for pdf_file in pdf_files:
-            logging.info(f"Processing {pdf_file.name}...")
-            self.sections.extend(self.extract_text_from_pdf(pdf_file))
+        logging.info(f"Found {len(pdf_files)} PDFs in {pdf_dir}")
+        
+        # Process each PDF in the directory
+        for pdf_path in pdf_files:
+            logging.info(f"Processing PDF: {pdf_path.name}")
+            try:
+                # Create a document info dictionary for this PDF
+                doc_info = {
+                    "filename": pdf_path.name,
+                    "title": pdf_path.stem.replace('_', ' ').title()
+                }
+                
+                # Extract text and add to sections
+                extracted_sections = self.extract_text_from_pdf(pdf_path)
+                for section in extracted_sections:
+                    section.doc_info = doc_info
+                self.sections.extend(extracted_sections)
+                
+                logging.info(f"Extracted {len(extracted_sections)} sections from {pdf_path.name}")
+                
+            except Exception as e:
+                logging.error(f"Error processing {pdf_path}: {e}", exc_info=True)
+                continue
         
         # Calculate relevance scores
         self.calculate_section_scores(query_embedding)
@@ -157,16 +197,29 @@ class DocumentAnalyzer:
         # Get top sections
         top_sections = self.rank_sections()
         
-        # Prepare the result
+        # Calculate processing time safely
+        try:
+            processing_time = (datetime.now() - start_time).total_seconds()
+        except Exception as e:
+            logging.warning(f"Error calculating processing time: {e}")
+            processing_time = 0.0
+        
+        # Count relevant sections safely
+        try:
+            relevant_sections = len([s for s in self.sections if hasattr(s, 'score') and s.score >= SIMILARITY_THRESHOLD])
+        except Exception as e:
+            logging.warning(f"Error counting relevant sections: {e}")
+            relevant_sections = 0
+        
         result = {
             "metadata": {
-                "challenge_info": self.challenge_info,
-                "persona": self.persona,
-                "job_to_be_done": self.task,
-                "processing_time": time.time() - start_time,
-                "document_count": len(pdf_files),
-                "section_count": len(self.sections),
-                "relevant_sections": len([s for s in self.sections if s.score >= SIMILARITY_THRESHOLD]),
+                "challenge_info": self.challenge_info or {},
+                "persona": self.persona or {},
+                "job_to_be_done": self.task or {},
+                "processing_time_seconds": processing_time,
+                "document_count": len(pdf_files) if pdf_files else 0,
+                "section_count": len(self.sections) if hasattr(self, 'sections') else 0,
+                "relevant_sections": relevant_sections,
                 "version": VERSION
             },
             "extracted_sections": [
@@ -232,7 +285,7 @@ def save_output(output_path: Path, data: Dict) -> None:
         logging.error(f"Error saving output to {output_path}: {str(e)}")
         raise
 
-def process_collection(collection_dir: Path) -> None:
+def process_collection(collection_dir: Path):
     """Process a single collection directory."""
     logging.info(f"Processing collection: {collection_dir.name}")
     
@@ -257,23 +310,39 @@ def process_collection(collection_dir: Path) -> None:
 def main():
     """Main function to process all collections."""
     import time
+    import argparse
+    import os
+    
     start_time = time.time()
     
     try:
-        # Process each collection in Challenge_1b directory
-        base_dir = Path(__file__).parent
-        collections_dir = base_dir / "Challenge_1b"
+        # Set up argument parsing
+        parser = argparse.ArgumentParser(description='Analyze PDF documents for a specific persona and task.')
+        parser.add_argument('--collection', type=str, help='Path to the collection directory')
+        args = parser.parse_args()
         
-        if not collections_dir.exists():
-            collections_dir.mkdir(parents=True)
-            logging.warning(f"Created collections directory: {collections_dir}")
+        # Get collection path from environment variable or use the one from args
+        collection_path = os.environ.get('COLLECTION_PATH')
+        if collection_path:
+            collection_path = Path(collection_path)
+        elif args.collection:
+            collection_path = Path(args.collection)
+        else:
+            # Default to looking in the current directory
+            collection_path = Path.cwd()
         
-        # Find all collection directories
-        collections = [d for d in collections_dir.iterdir() if d.is_dir() and d.name.startswith("Collection")]
+        logging.info(f"Using collection path: {collection_path.absolute()}")
         
-        if not collections:
-            logging.warning(f"No collection directories found in {collections_dir}")
-            return
+        # Check if this is a collection directory (contains challenge1b_input.json)
+        if not (collection_path / 'challenge1b_input.json').exists():
+            # Look for collection subdirectories
+            collections = [d for d in collection_path.iterdir() 
+                          if d.is_dir() and (d / 'challenge1b_input.json').exists()]
+            if not collections:
+                logging.error(f"No valid collection directories found in {collection_path}")
+                return
+        else:
+            collections = [collection_path]
         
         # Process each collection
         for collection_dir in collections:

@@ -3,36 +3,6 @@
     "challenge_id": "round_1b_002",
     "test_case_name": "travel_planning"
   },
-  "documents": [
-    {
-      "filename": "south_france_guide_1.pdf",
-      "title": "South of France Travel Guide - Coastal Cities"
-    },
-    {
-      "filename": "south_france_guide_2.pdf",
-      "title": "Provence Region - Best Places to Visit"
-    },
-    {
-      "filename": "south_france_guide_3.pdf",
-      "title": "French Riviera - A Complete Travel Guide"
-    },
-    {
-      "filename": "south_france_guide_4.pdf",
-      "title": "Budget Travel in Southern France"
-    },
-    {
-      "filename": "south_france_guide_5.pdf",
-      "title": "Gastronomy of Southern France"
-    },
-    {
-      "filename": "south_france_guide_6.pdf",
-      "title": "Adventure Activities in Southern France"
-    },
-    {
-      "filename": "south_france_guide_7.pdf",
-      "title": "Cultural Highlights of Southern France"
-    }
-  ],
   "persona": {
     "role": "Travel Planner",
     "experience_level": "Intermediate",

@@ -7,7 +7,12 @@
     "persona": {
       "role": "AI Research Scientist",
       "experience_level": "Expert",
-      "interests": ["neural_networks", "nlp", "efficiency", "scaling_laws"],
+      "interests": [
+        "neural_networks",
+        "nlp",
+        "efficiency",
+        "scaling_laws"
+      ],
       "group_size": 1,
       "trip_duration": 0
     },
@@ -25,77 +30,239 @@
         "Consider both theoretical and practical aspects"
       ]
     },
-    "processing_time": 6.78,
-    "document_count": 7,
-    "section_count": 142,
-    "relevant_sections": 18,
+    "processing_time_seconds": 0.0,
+    "document_count": 15,
+    "section_count": 247,
+    "relevant_sections": 15,
     "version": "1.0.0"
   },
   "extracted_sections": [
     {
-      "document": "ai_research_paper_2.pdf",
-      "section_title": "Efficient Training Techniques: This paper introduces a novel approach to reduce training time by 40% through...",
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "section_title": "Multiple document support in AI Assistant \nGenAl Assistant allows users to process up to 10 document...",
       "importance_rank": 1,
-      "page_number": 3,
-      "relevance_score": 0.94,
-      "char_count": 876,
-      "word_count": 132
+      "page_number": 8,
+      "relevance_score": 0.4199618101119995,
+      "char_count": 428,
+      "word_count": 61
     },
     {
-      "document": "ai_research_paper_6.pdf",
-      "section_title": "Model Compression Methods: We present a comprehensive analysis of quantization, pruning, and knowledge distillation techniques...",
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "app experience as described above. After activation, a user must engage AI Assistant or \ngenerative ...",
       "importance_rank": 2,
-      "page_number": 2,
-      "relevance_score": 0.91,
-      "char_count": 765,
-      "word_count": 115
+      "page_number": 6,
+      "relevance_score": 0.41232380270957947,
+      "char_count": 2361,
+      "word_count": 365
     },
     {
-      "document": "ai_research_paper_1.pdf",
-      "section_title": "Sparse Transformer Architectures: Our proposed architecture reduces memory usage by 60% while maintaining...",
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "Overview of generative AI features \nUse the generative AI features in Acrobat and Acrobat Reader to ...",
       "importance_rank": 3,
-      "page_number": 5,
-      "relevance_score": 0.89,
-      "char_count": 654,
-      "word_count": 98
+      "page_number": 2,
+      "relevance_score": 0.39584702253341675,
+      "char_count": 1964,
+      "word_count": 287
     },
     {
-      "document": "ai_research_paper_5.pdf",
-      "section_title": "Efficient Attention Mechanisms: We compare different attention variants and their impact on training efficiency...",
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "section_title": "Read-aloud generated responses \nQuickly review the generated responses using the read-aloud feature ...",
       "importance_rank": 4,
       "page_number": 4,
-      "relevance_score": 0.85,
-      "char_count": 543,
-      "word_count": 82
+      "relevance_score": 0.3747491240501404,
+      "char_count": 577,
+      "word_count": 97
     },
     {
-      "document": "ai_research_paper_3.pdf",
-      "section_title": "Multimodal Training Efficiency: Techniques for efficient joint training of vision and language models...",
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "Chrome or Microsoft Edge. AI Assistant is also available on phones through Acrobat mobile \napps (iOS...",
       "importance_rank": 5,
       "page_number": 3,
-      "relevance_score": 0.82,
-      "char_count": 432,
-      "word_count": 65
+      "relevance_score": 0.37368518114089966,
+      "char_count": 2415,
+      "word_count": 353
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "If you have questions about the document, scroll to the bottom, and select Ask AI \nAssistant. \n \nStr...",
+      "importance_rank": 6,
+      "page_number": 14,
+      "relevance_score": 0.3612445592880249,
+      "char_count": 1480,
+      "word_count": 218
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "listening, ask a question. Ask your questions. and wait until the response is \ngenerated.  \n \nEnter ...",
+      "importance_rank": 7,
+      "page_number": 28,
+      "relevance_score": 0.3492632806301117,
+      "char_count": 540,
+      "word_count": 85
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "Using AI Assistant in Acrobat mobile \nAI Assistant quickly provides comprehensive and informative an...",
+      "importance_rank": 8,
+      "page_number": 26,
+      "relevance_score": 0.3382090926170349,
+      "char_count": 548,
+      "word_count": 85
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "cues indicating where generated information came from. However, because the AI Assistant is \npowered...",
+      "importance_rank": 9,
+      "page_number": 4,
+      "relevance_score": 0.3344826400279999,
+      "char_count": 2882,
+      "word_count": 436
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "• \nMove the drag handle up or down to resize the AI Assistant pane for better \nreadability. \n• \nRevi...",
+      "importance_rank": 10,
+      "page_number": 29,
+      "relevance_score": 0.33199310302734375,
+      "char_count": 181,
+      "word_count": 31
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "Select multiple files \nAcrobat creates a collection of the selected files and opens the document. \n2...",
+      "importance_rank": 11,
+      "page_number": 11,
+      "relevance_score": 0.33195483684539795,
+      "char_count": 1268,
+      "word_count": 212
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "• \nAndroid: Version 9 and later \n• \nWindows and macOS: See Acrobat system \nrequirements.   \nSupporte...",
+      "importance_rank": 12,
+      "page_number": 10,
+      "relevance_score": 0.33109980821609497,
+      "char_count": 1111,
+      "word_count": 179
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "Provide feedback for generated answers \nYour feedback is essential for the AI Assistant to learn and...",
+      "importance_rank": 13,
+      "page_number": 30,
+      "relevance_score": 0.3212693929672241,
+      "char_count": 356,
+      "word_count": 54
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "Before You Begin \nBefore you begin, ensure that you adhere to the file and usage-related restriction...",
+      "importance_rank": 14,
+      "page_number": 9,
+      "relevance_score": 0.31137728691101074,
+      "char_count": 1306,
+      "word_count": 214
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "section_title": "The chat history might still contain content from documents you've removed from a \nCollection. The A...",
+      "importance_rank": 15,
+      "page_number": 7,
+      "relevance_score": 0.30422550439834595,
+      "char_count": 1440,
+      "word_count": 236
     }
   ],
   "subsection_analysis": [
     {
-      "document": "ai_research_paper_2.pdf",
-      "refined_text": "Efficient Training Techniques:\n\n1. Mixed Precision Training: Achieves 2-3x speedup with minimal accuracy loss\n2. Gradient Checkpointing: Reduces memory usage by 80% with only 20% increase in computation\n3. Data Parallelism: Scales training across multiple GPUs with near-linear efficiency\n4. Optimizer Improvements: Novel optimization algorithms that converge faster\n\nKey Finding: The combination of these techniques can reduce total training time by 40-60% compared to standard approaches.",
-      "page_number": 3,
-      "relevance_score": 0.94
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "refined_text": "Multiple document support in AI Assistant \nGenAl Assistant allows users to process up to 10 documents simultaneously, including non-\nPDF formats (.doc, .docx, .rtf, .txt, .ppt, .pptx), each up to 600 pages and 100MB. Users can \nswitch between documents, with responses consolidated from various sources and proper \nattributions. Persistent history support is also included to provide continuous access to \nprevious interactions.",
+      "page_number": 8,
+      "relevance_score": 0.4199618101119995
     },
     {
-      "document": "ai_research_paper_6.pdf",
-      "refined_text": "Model Compression Methods:\n\n1. Quantization: 8-bit quantization achieves 4x model size reduction with <1% accuracy drop\n2. Pruning: Removing up to 50% of weights with minimal impact on model performance\n3. Knowledge Distillation: Smaller student models achieve 95% of teacher model performance\n4. Architecture Search: Automated discovery of efficient model architectures\n\nImplementation: Open-source libraries available for all described methods.",
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "app experience as described above. After activation, a user must engage AI Assistant or \ngenerative summary on a specific file before processing takes place. \nNote:  \nThe generative AI features are only available in English for users with Individual or Teams \nentitlements. Users with Enterprise entitlements may only receive Acrobat generative AI \nfeatures when their admin assigns them with a paid or trial license, or if they are accepted into \none of the programs in our private beta.   \nYou can disable the generative AI feature by following the steps outlined here. Once disabled, \nno documents will be processed through generative AI in Acrobat until you activate the \nfeature set again. \nWhat LLMS are we leveraging to power generative ai in acrobat? \nWith AI Assistant in Acrobat and Acrobat Reader, Adobe takes an LLM-agnostic approach, \nselecting best-in-class technologies that address a range of customer use cases. We currently \nhave integrated the Microsoft Azure OpenAI Service with our proprietary technologies to \nprovide generative AI capability in Acrobat and Acrobat Reader. \nDoes adobe concurrently train any large language models (“LLMS”) with your content \nwhile you're using generative ai features in acrobat? \nNo. Acrobat does not train any LLMs on your content concurrent to your interactions with \ngenerative AI in Acrobat. Prompts provided to AI Assistant do not modify the underlying \nmodel. Your content will not be used to train any LLMs that deliver Acrobat’s generative AI \ncapability. For more information, please refer to the questions above in this help section \n(Content Usage and Handling Practices). \n \nNote:  \nAdobe does not use content from an organization or school account for product \nimprovement for generative AI unless otherwise agreed to by the organization or school. \n \nManaging chat history \nWhat is chat history? \nAcrobat now allows you to reference past conversations you had with AI Assistant. Chat \nhistory includes your textual prompts and generated responses for a specific document or a \nset of documents you selected, also termed a Collection. \nHow can I see my chat history? \nChat history includes your past conversations with AI Assistant and is linked to either a single \ndocument or a Collection. To view these conversations, simply open the document or \nCollection from your list of recent files.",
+      "page_number": 6,
+      "relevance_score": 0.41232380270957947
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "Overview of generative AI features \nUse the generative AI features in Acrobat and Acrobat Reader to quickly scan through \nlengthy, complex PDF content and get answers or generate a summary. \n \nNote: The generative AI features in Acrobat and Acrobat Reader support English, French, \nGerman, Spanish, Italian, Portuguese, or Japanese. To understand the governing terms, \nreview Adobe's Generative AI User Guidelines. To understand Adobe's data handling \npractices, see Content usage and handling practices. \n \nThe AI-powered features in Acrobat and Acrobat Reader support multiple document types, \nincluding PDFs, DOCX, PPTX, TXT, and RTF files. AI Assistant supports Microsoft Teams and \nZoom meeting transcripts. The capabilities improve comprehension and save time across \nvarious document types. \n \nAI Assistant quickly gets answers to your questions based on your documents in a \ncomprehensive and informative way. It can analyze multiple documents to uncover \nsimilarities, differences, and key patterns. With AI Assistant, you can make targeted requests, \nsuch as highlighting the differences between PDF contracts. It links to text and data table \nsources within the document. It also suggests follow-up questions for you based on the \nprimary question. AI Assistant uses the latest AI language model, GPT 4o, to provide more \naccurate and clear answers to your queries based on more citations. It can extract information \naccurately from tables and complex documents. \n \nGenerative summary automatically provides an outline with headings and summaries to \nhighlight key points in the document. The feature generates key insights that help you easily \ncomprehend the PDF content. For a speedier response, it processes PDF content in chunks \nand simultaneously streams summaries. \n \nYou can access the generative AI features in Adobe Acrobat Reader, Adobe Acrobat desktop \non both Windows and macOS, on Acrobat online, and within Acrobat extensions for Google",
       "page_number": 2,
-      "relevance_score": 0.91
+      "relevance_score": 0.39584702253341675
     },
     {
-      "document": "ai_research_paper_1.pdf",
-      "refined_text": "Sparse Transformer Architectures:\n\n- Sparse Attention: Reduces computation from O(n²) to O(n√n)\n- Mixture of Experts: Only activate relevant model components for each input\n- Routing Mechanisms: Efficiently direct tokens to specialized model components\n\nResults: 60% reduction in memory usage while maintaining 98% of baseline accuracy on standard benchmarks.",
-      "page_number": 5,
-      "relevance_score": 0.89
+      "document": "Learn Acrobat - Generative AI_2.pdf",
+      "refined_text": "Read-aloud generated responses \nQuickly review the generated responses using the read-aloud feature in Acrobat AI Assistant. \nThe read-aloud feature helps you play the AI Assistant generated response or a part of it in \nyour chat. You can select any sentence and play it. You can also choose to change the voice of \nthe feature. To access the read-aloud feature:  \n1. Open the document you want to review. Select AI Assistant from the lower right and \nenter your query. A response is generated.  \n2. Select the speaker icon in the upper right to turn on the read-aloud feature.",
+      "page_number": 4,
+      "relevance_score": 0.3747491240501404
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "Chrome or Microsoft Edge. AI Assistant is also available on phones through Acrobat mobile \napps (iOS and Android). It isn't available on iPad or Android tablets.  \n \n \nBenefits of generative AI features \nThe generative AI features in Acrobat and Acrobat Reader significantly improve \ncomprehension, help you get insights, and produce high-quality content quickly. Here are the \nmain benefits. \n \n- \nImproved comprehension: You can better understand complex PDF documents \nbecause the features provide insights and more context around the content. \n- \nEnhanced productivity: Work across multiple PDFs and documents in various formats, \nincluding Teams and Zoom meeting transcripts, streamlining your workflow and \nsaving time for higher-priority tasks. \n- \nImpactful content: You can use the content suggestions that the features generate for \nimpactful emails, presentations, meeting notes, and more. \n \nTurn off generative AI features \nThe generative AI features in Acrobat and Acrobat Reader are turned on by default. However, \nyou can choose to turn them off, if necessary. If you're an admin, you can revoke access to \ngenerative AI features for your team or org by contacting Adobe Customer Care. \n \nUser Guidelines \nUser Guidelines governing your access and use of Acrobat and Acrobat Reader generative AI \nfeatures are found here. \nIn addition, please always use your judgment to evaluate generated output and any source \nattributions. Acrobat and Acrobat Reader generative AI features are built upon powerful, \nemerging large language model technologies that may generate outputs that are inaccurate \nor misleading, or otherwise reflect content that does not represent Adobe’s views. This is \nespecially true if you try to use these features to generate outputs that are unrelated to your \nsource document.   \nDo not use generative AI features to seek legal, medical, financial, or other kinds of \nprofessional advice or any opinions, judgments, or recommendations without conducting \nyour own independent consultation or research. Generative AI features cannot replace \nadvice provided by a qualified professional and do not form any such relationship (for \nexample, an attorney-client relationship).  \nAttributions \nWhen the AI Assistant analyzes a document, it identifies sentences most likely to support the \nanswer to your question. Attribution can take the form of clickable citations or other helpful",
+      "page_number": 3,
+      "relevance_score": 0.37368518114089966
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "If you have questions about the document, scroll to the bottom, and select Ask AI \nAssistant. \n \nStreaming summaries for long PDFs \nWhen you use Generative summary to scan lengthy PDFs, Acrobat or Acrobat Reader \nprocesses the content in chunks and simultaneously streams summaries of the portions that it \nprocesses. It helps improve your productivity because you can instantly review the output and \nstay engaged. \nThe key advantages of streaming summaries include: \n• \nReal-time streaming: As Acrobat or Acrobat Reader processes a lengthy PDF, it \nconcurrently streams summaries for sections it has already analyzed. It helps eliminate \nany latency associated with summarizing voluminous content. \n• \nSegmented display: When you start generating the summary for your content, you'll \nimmediately see summarized content for the sections that the Generative summary \nfeature finished processing. \n• \nParallel processing: While you engage with the summarized sections, the feature \nextracts headings, and generates summaries for the subsequent sections. \n \nUse generative AI features in meeting apps \nYou can harness the power of generative AI features in Acrobat to gain insights from \ntranscripts of online meetings in Microsoft Teams and Zoom. Use the generative AI \nfeatures to summarize discussions or draft emails for meeting notes or action \nitems. You can access the generative AI features from Acrobat Reader, Acrobat \ndesktop and online, and Acrobat for Microsoft Teams.",
+      "page_number": 14,
+      "relevance_score": 0.3612445592880249
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "listening, ask a question. Ask your questions. and wait until the response is \ngenerated.  \n \nEnter your questions using the voice command \n \n4. The answer to your question is displayed. The relevant sources are indicated \nwith numbers. Do the following: \n• \nSelect a number to navigate directly to the corresponding section of the \ndocument.  \n• \nTo hide the attributed sources within the document, select Hide sources from \nthe Options menu. \n• \nWhile the AI Assistant generates the response, you can select Stop to pause the \nprocessing.",
+      "page_number": 28,
+      "relevance_score": 0.3492632806301117
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "Using AI Assistant in Acrobat mobile \nAI Assistant quickly provides comprehensive and informative answers to questions based on \nthe PDF content. It links sources within the document and suggests follow-up questions based \non the primary question. \nTo start using AI Assistant, perform the following steps: \n1. Open the document you want to work on, and then select AI Assistant.  \nAlternatively, you can also access AI Assistant from the contextual menu. Select \nthe text for AI Assistant. The contextual menu opens, then select Ask AI \nAssistant.",
+      "page_number": 26,
+      "relevance_score": 0.3382090926170349
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "cues indicating where generated information came from. However, because the AI Assistant is \npowered by generative AI models, and the technology is still evolving and not perfect, not all \nanswers are helpful or accurate. As a result, the AI Assistant may not find and display answers \nto your questions — even when the information is in your document. And rarely, the AI \nAssistant may provide incorrect attributions. For example, you may receive a clickable citation \nor cue that takes you to an unrelated section instead of providing helpful information on \nwhere the answer came from in the document. Please double-check all AI-generated \nresponses. \nPlease note that in our current version, if the language of the question and response is \ndifferent than the language of your document, AI Assistant won't provide any attribution. In \nsuch scenarios, you can try asking questions in the language of the document to receive \nclickable citations in the response.  \nFeedback \nWe provide a feedback mechanism directly within the AI Assistant to help us improve \naccuracy and other performance issues. This is an ongoing process, and we will continue to \nwork together with our customers and community to harness the power of this new \ntechnology responsibly. \nContent usage and handling practices \nThis FAQ addresses Adobe’s content usage and handling practices specific to improving \ngenerative AI capabilities in Adobe Acrobat and Adobe Acrobat Reader. For purposes of this \nFAQ, references to “generative AI capabilities” are specific to Acrobat AI Assistant and \nGenerative summary only. To learn more about how Adobe may analyze metadata and \ninformation about your prompt (for example, question type) and document (for example, \nnumber of pages, document structure, document type, and other document statistics) for \nproduct improvement purposes in Document Cloud generally, see our content analysis FAQ. \nFor more information about Adobe’s security, privacy, and AI ethics practices, see the Adobe \nDocument Cloud security page (and other materials in our Trust Center), the Adobe Privacy \nPolicy, and the Adobe AI Ethics page, respectively. \n \nWill adobe ever look at your content while you’re using generative ai in acrobat and \nacrobat reader? \nWe do not look at your document, prompt(s), or generated responses except in the instances \ndescribed below. \n• \nReported content, bugs, or vulnerabilities. When you report content (e.g., for being \nharmful, illegal, offensive, etc.), we investigate it by manually reviewing the document, \nprompt(s), and generated responses to make adjustments to the service to address the \nissue. \n• \nUser-Provided Feedback. For Acrobat Individual users* and Acrobat Reader users that \nprovide feedback, you have the option to share with us your document, prompt(s), \nand generated responses during a document session for product improvement",
+      "page_number": 4,
+      "relevance_score": 0.3344826400279999
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "• \nMove the drag handle up or down to resize the AI Assistant pane for better \nreadability. \n• \nReview related questions that the AI Assistant suggests based on your primary \nquery.",
+      "page_number": 29,
+      "relevance_score": 0.33199310302734375
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "Select multiple files \nAcrobat creates a collection of the selected files and opens the document. \n2. Select Get started. \n3. Select from the sample questions that are displayed based on the content of your PDF \nfile. Alternatively, type your question in the message field. \n4. The answer to your question is displayed. The relevant sources are marked with \nnumbers. You can do the following: \n• \nSelect a number to navigate directly to the corresponding section of the document. If \nthere are multiple files, hovering the mouse over the number shows the preview of the \nreferenced document. \n• \nTo hide the attributed sources within the document, select Hide sources from the \nOptions menu. \n• \nTo copy a specific answer, select Copy   , or choose Copy full chat from the Options \nmenu to copy the entire conversation. \n• \nWhile the AI Assistant generates the response, you can pause the processing anytime \nby selecting Stop. \n• \nMove the drag handle left or right to adjust the AI Assistant pane size for better \nreadability. \n• \nReview related questions that the AI Assistant suggests based on your primary query. \n• \nTo add more files, select Add files.  \n• \nTo remove a file from the Collection, select View and manage files in chat, \nthen Remove file from chat.",
+      "page_number": 11,
+      "relevance_score": 0.33195483684539795
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "• \nAndroid: Version 9 and later \n• \nWindows and macOS: See Acrobat system \nrequirements.   \nSupported browsers \nSee Technical requirements for Acrobat on the web. \n \n \n \nGet AI-generated answers \nAI Assistant supports scanned documents. You can scan your paper documents and upload \nthem to Acrobat to get concise summaries and accurate answers to your questions. It also \nbreaks down complex language into key details, making it easy to read and understand \ncontracts directly in Acrobat. \n \n \nAI Assistant \nThe AI Assistant feature provides AI-generated answers to your questions based on the \ncontent of the selected files. It also highlights the portion of content from where it fetches the \nanswer for more context. The AI Assistant also suggests follow-up questions based on your \nprimary query. \nTo get started: \n1. Open a PDF and select AI Assistant in the global bar. To select multiple files, go to \nAcrobat Home and choose Select files in the Recommended tools for you section, \nchoose your files, and select Open.  \nNote: You can select up to 10 files, each 600 pages long and no larger than 100 MB.",
+      "page_number": 10,
+      "relevance_score": 0.33109980821609497
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "Provide feedback for generated answers \nYour feedback is essential for the AI Assistant to learn and develop better answers the next \ntime you come with questions. To provide feedback: \n1. Select the reference numbers given alongside the generated answers.  \n \nContent references \n2. Long press anywhere inside the panel to get options to provide feedback.",
+      "page_number": 30,
+      "relevance_score": 0.3212693929672241
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "Before You Begin \nBefore you begin, ensure that you adhere to the file and usage-related restrictions and login \nrequirements. \nFile considerations \n• \nThe language of the PDF file is English, French, \nGerman, Spanish, Italian, Brazilian Portuguese, or \nJapanese. \n• \nThe file size must be less than 100 MB. \n• \nThe file can have up to 600 pages. \n• \nThe PDF shouldn’t be password protected or have any \nusage restrictions. \n• \nThe file shouldn’t be a PDF Portfolio. \n• \nThe maximum character limit for the text selection \nfeature in AI Assistant is 8000 characters. The selected \ntext must be on a single page and cannot span multiple \npages. \nNote:  \nThe limits on PDF file size and page count are determined by the server settings and will \nautomatically adjust if the server settings change. \n \nAccount and login \n• \nYou’re online. \n• \nGenerative AI features are enabled. \nUsage \n• \nKeep your questions under 500 characters. \nApp settings \n• \nSet the language of the Acrobat or Acrobat Reader app \nto English, French, German, Spanish, Italian, Brazilian \nPortuguese, or Japanese. \n• \nTurn on the new Acrobat or Acrobat Reader \nexperience. On Windows, select the hamburger menu, \nand then select Enable new Acrobat. On macOS, go \nto View > Enable new Acrobat. \nSupported OS \n• \niOS: Version 16 and later",
+      "page_number": 9,
+      "relevance_score": 0.31137728691101074
+    },
+    {
+      "document": "Learn Acrobat - Generative AI_1.pdf",
+      "refined_text": "The chat history might still contain content from documents you've removed from a \nCollection. The AI Assistant may also use this chat history as context when responding to your \nprompts. \nWhere is my chat history stored? \nIt's stored on your local device for Acrobat and Reader’s desktop, mobile, and online apps \nand in Adobe cloud storage for Acrobat’s online app. It permits you to easily access the \nconversation to review or continue using AI Assistant.  \nCan I export my chat history in AI Assistant? \nExport is not currently available. Instead, you can copy the chat history or specific generated \nresponses into your text editor of choice. Learn more here.   \nHow can I clear my chat history in AI Assistant? \nYou can clear chat history from the More menu for each individual document or a Collection. \nSelecting Clear chat history will delete all of the chat history, meaning the document \noverview, textual prompts (suggested by AI Assistant or provided by you), and generated \nresponses. \nCan I disable chat history in AI Assistant? \nThis is currently not available to users.  \nCan i share my chat history with others? \nNo, you can’t share your chat history with other users. \nWhat happens if I disconnect acrobat from other third-party cloud storage services such as \ngoogle drive or OneDrive? \nYou'll no longer be able to access your third-party cloud storage files in Acrobat and the AI \nAssistant chats associated with them.",
+      "page_number": 7,
+      "relevance_score": 0.30422550439834595
     }
   ]
 }
