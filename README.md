@@ -118,7 +118,3 @@ For detailed instructions, see [Challenge 1B README](Challenge_1b/README.md).
 Both solutions are optimized to run within the challenge constraints:
 - **Challenge 1A**: Processes a 50-page PDF in under 10 seconds
 - **Challenge 1B**: Handles multiple document collections with efficient memory usage
-
-## License
-
-This project is licensed under the MIT License.
