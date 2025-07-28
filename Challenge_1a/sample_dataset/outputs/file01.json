@@ -1,0 +1,20 @@
+{
+  "title": "Application form for grant of LTC advance",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Application form for grant of LTC advance",
+      "page": 1,
+      "confidence": 0.8999999999999999,
+      "is_bold": true,
+      "is_italic": false
+    }
+  ],
+  "metadata": {
+    "processing_time": 0.0655052661895752,
+    "page_count": 1,
+    "block_count": 23,
+    "heading_count": 1,
+    "version": "1.0.0"
+  }
+}
