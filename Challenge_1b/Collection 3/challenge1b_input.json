@@ -1,0 +1,59 @@
+{
+  "challenge_info": {
+    "challenge_id": "round_1b_004",
+    "test_case_name": "startup_business_plan"
+  },
+  "documents": [
+    {
+      "filename": "market_analysis_2025.pdf",
+      "title": "Global Market Trends and Analysis 2025"
+    },
+    {
+      "filename": "competitor_analysis.pdf",
+      "title": "Competitor Benchmarking Report"
+    },
+    {
+      "filename": "financial_projections.pdf",
+      "title": "5-Year Financial Projections and Modeling"
+    },
+    {
+      "filename": "product_roadmap.pdf",
+      "title": "Product Development Roadmap and Timeline"
+    },
+    {
+      "filename": "team_profiles.pdf",
+      "title": "Executive Team and Key Personnel Profiles"
+    },
+    {
+      "filename": "funding_strategy.pdf",
+      "title": "Investment and Funding Strategy"
+    },
+    {
+      "filename": "risk_analysis.pdf",
+      "title": "Risk Assessment and Mitigation Strategies"
+    }
+  ],
+  "persona": {
+    "role": "Startup Founder",
+    "experience_level": "Early-stage",
+    "interests": ["fundraising", "market_opportunity", "scaling", "product_development"],
+    "group_size": 1,
+    "trip_duration": 0
+  },
+  "job_to_be_done": {
+    "task": "Develop a comprehensive business plan for a tech startup seeking seed funding",
+    "objectives": [
+      "Identify target market and customer segments",
+      "Analyze competitive landscape and differentiation",
+      "Develop realistic financial projections",
+      "Create a compelling investment case",
+      "Outline go-to-market strategy"
+    ],
+    "constraints": [
+      "Focus on the first 18 months of operation",
+      "Targeting $1M in seed funding",
+      "Operating in the SaaS space",
+      "Team of 5-7 people"
+    ]
+  }
+}

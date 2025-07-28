@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PDF Outline Extraction Output",
+  "description": "Schema for the output JSON from the PDF outline extraction process",
+  "type": "object",
+  "required": ["title", "outline"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the document"
+    },
+    "outline": {
+      "type": "array",
+      "description": "List of headings in the document",
+      "items": {
+        "type": "object",
+        "required": ["level", "text", "page"],
+        "properties": {
+          "level": {
+            "type": "string",
+            "enum": ["H1", "H2", "H3", "H4", "H5", "H6"],
+            "description": "Heading level (H1 being the highest level)"
+          },
+          "text": {
+            "type": "string",
+            "description": "The text content of the heading"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Page number where the heading appears (1-based)"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Confidence score of the heading detection (1 = highest confidence)"
+          },
+          "is_bold": {
+            "type": "boolean",
+            "description": "Whether the heading is in bold"
+          },
+          "is_italic": {
+            "type": "boolean",
+            "description": "Whether the heading is in italic"
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata about the extraction process",
+      "properties": {
+        "processing_time": {
+          "type": "number",
+          "description": "Time taken to process the document in seconds"
+        },
+        "page_count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total number of pages in the document"
+        },
+        "block_count": {
+          "type": "integer",
+          "description": "Number of text blocks processed"
+        },
+        "heading_count": {
+          "type": "integer",
+          "description": "Number of headings extracted"
+        },
+        "version": {
+          "type": "string",
+          "description": "Version of the extraction algorithm"
+        }
+      }
+    }
+  }
+}

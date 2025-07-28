@@ -1,0 +1,57 @@
+{
+  "challenge_info": {
+    "challenge_id": "round_1b_003",
+    "test_case_name": "research_paper_analysis"
+  },
+  "documents": [
+    {
+      "filename": "ai_research_paper_1.pdf",
+      "title": "Advances in Transformer Architectures for NLP"
+    },
+    {
+      "filename": "ai_research_paper_2.pdf",
+      "title": "Efficient Training of Large Language Models"
+    },
+    {
+      "filename": "ai_research_paper_3.pdf",
+      "title": "Multimodal Learning: Vision and Language"
+    },
+    {
+      "filename": "ai_research_paper_4.pdf",
+      "title": "Ethical Considerations in AI Development"
+    },
+    {
+      "filename": "ai_research_paper_5.pdf",
+      "title": "Reinforcement Learning for Real-World Applications"
+    },
+    {
+      "filename": "ai_research_paper_6.pdf",
+      "title": "Neural Network Compression Techniques"
+    },
+    {
+      "filename": "ai_research_paper_7.pdf",
+      "title": "Self-Supervised Learning Approaches"
+    }
+  ],
+  "persona": {
+    "role": "AI Research Scientist",
+    "experience_level": "Expert",
+    "interests": ["neural_networks", "nlp", "efficiency", "scaling_laws"],
+    "group_size": 1,
+    "trip_duration": 0
+  },
+  "job_to_be_done": {
+    "task": "Analyze recent advances in efficient training of large language models",
+    "objectives": [
+      "Identify key techniques for improving training efficiency",
+      "Compare different model architectures and their trade-offs",
+      "Summarize findings in a clear, structured manner",
+      "Highlight potential areas for future research"
+    ],
+    "constraints": [
+      "Focus on peer-reviewed publications from the last 3 years",
+      "Prioritize approaches with open-source implementations",
+      "Consider both theoretical and practical aspects"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "challenge_info": {
+      "challenge_id": "round_1b_002",
+      "test_case_name": "travel_planning"
+    },
+    "persona": {
+      "role": "Travel Planner",
+      "experience_level": "Intermediate",
+      "interests": ["culture", "food", "adventure", "budget_travel"],
+      "group_size": 10,
+      "trip_duration": 4
+    },
+    "job_to_be_done": {
+      "task": "Plan a 4-day trip for 10 college friends to South of France",
+      "objectives": [
+        "Create a balanced itinerary with cultural and leisure activities",
+        "Include budget-friendly options for accommodation and dining"
+      ],
+      "constraints": [
+        "Limited to 4 days",
+        "Group of 10 college students",
+        "Budget-conscious travel"
+      ]
+    },
+    "processing_time": 8.45,
+    "document_count": 7,
+    "section_count": 128,
+    "relevant_sections": 15,
+    "version": "1.0.0"
+  },
+  "extracted_sections": [
+    {
+      "document": "south_france_guide_3.pdf",
+      "section_title": "4-Day Itinerary for the French Riviera...",
+      "importance_rank": 1,
+      "page_number": 5,
+      "relevance_score": 0.92,
+      "char_count": 1245,
+      "word_count": 187
+    },
+    {
+      "document": "south_france_guide_4.pdf",
+      "section_title": "Budget Accommodation Options...",
+      "importance_rank": 2,
+      "page_number": 3,
+      "relevance_score": 0.88,
+      "char_count": 876,
+      "word_count": 132
+    },
+    {
+      "document": "south_france_guide_5.pdf",
+      "section_title": "Affordable Local Eateries...",
+      "importance_rank": 3,
+      "page_number": 2,
+      "relevance_score": 0.85,
+      "char_count": 654,
+      "word_count": 98
+    },
+    {
+      "document": "south_france_guide_6.pdf",
+      "section_title": "Group Activities...",
+      "importance_rank": 4,
+      "page_number": 4,
+      "relevance_score": 0.82,
+      "char_count": 543,
+      "word_count": 82
+    },
+    {
+      "document": "south_france_guide_1.pdf",
+      "section_title": "Public Transportation Tips...",
+      "importance_rank": 5,
+      "page_number": 3,
+      "relevance_score": 0.78,
+      "char_count": 432,
+      "word_count": 65
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "south_france_guide_3.pdf",
+      "refined_text": "4-Day Itinerary for the French Riviera:\n\nDay 1 - Explore Nice's Old Town and Promenade des Anglais\nDay 2 - Day trip to Monaco and Èze\nDay 3 - Beach Day and Local Culture\nDay 4 - Day trip to Cannes and Antibes",
+      "page_number": 5,
+      "relevance_score": 0.92
+    },
+    {
+      "document": "south_france_guide_4.pdf",
+      "refined_text": "Budget Accommodation Options:\n\nFor groups of 10, consider these options:\n1. Entire apartment rentals (Airbnb/VRBO)\n2. Hostels with private group rooms\n3. Budget hotels with triple/quad rooms",
+      "page_number": 3,
+      "relevance_score": 0.88
+    },
+    {
+      "document": "south_france_guide_5.pdf",
+      "refined_text": "Affordable Local Eateries in Nice:\n\n1. Chez Pipo - Famous for socca (chickpea pancake)\n2. La Merenda - Authentic Niçoise cuisine\n3. Le Bistrot d'Antoine - Reasonable prices\n4. Fenocchio - Legendary ice cream\n5. Lou Pilha Leva - Hearty local dishes",
+      "page_number": 2,
+      "relevance_score": 0.85
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+PyMuPDF==1.22.5
+numpy>=1.21.0
+sentence-transformers>=2.2.2
+torch>=1.11.0
+transformers>=4.19.0
+scikit-learn>=1.0.2

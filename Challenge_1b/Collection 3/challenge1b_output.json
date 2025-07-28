@@ -1,0 +1,103 @@
+{
+  "metadata": {
+    "challenge_info": {
+      "challenge_id": "round_1b_004",
+      "test_case_name": "startup_business_plan"
+    },
+    "persona": {
+      "role": "Startup Founder",
+      "experience_level": "Early-stage",
+      "interests": ["fundraising", "market_opportunity", "scaling", "product_development"],
+      "group_size": 1,
+      "trip_duration": 0
+    },
+    "job_to_be_done": {
+      "task": "Develop a comprehensive business plan for a tech startup seeking seed funding",
+      "objectives": [
+        "Identify target market and customer segments",
+        "Analyze competitive landscape and differentiation",
+        "Develop realistic financial projections",
+        "Create a compelling investment case",
+        "Outline go-to-market strategy"
+      ],
+      "constraints": [
+        "Focus on the first 18 months of operation",
+        "Targeting $1M in seed funding",
+        "Operating in the SaaS space",
+        "Team of 5-7 people"
+      ]
+    },
+    "processing_time": 7.23,
+    "document_count": 7,
+    "section_count": 135,
+    "relevant_sections": 16,
+    "version": "1.0.0"
+  },
+  "extracted_sections": [
+    {
+      "document": "market_analysis_2025.pdf",
+      "section_title": "Market Opportunity: The global SaaS market is projected to reach $700B by 2025, with our target segment...",
+      "importance_rank": 1,
+      "page_number": 2,
+      "relevance_score": 0.95,
+      "char_count": 987,
+      "word_count": 148
+    },
+    {
+      "document": "financial_projections.pdf",
+      "section_title": "18-Month Financial Projections: Revenue forecast shows $500K ARR by month 18 with 70% gross margins...",
+      "importance_rank": 2,
+      "page_number": 3,
+      "relevance_score": 0.92,
+      "char_count": 876,
+      "word_count": 132
+    },
+    {
+      "document": "competitor_analysis.pdf",
+      "section_title": "Competitive Landscape: Analysis of 12 direct competitors shows our unique value proposition in...",
+      "importance_rank": 3,
+      "page_number": 1,
+      "relevance_score": 0.89,
+      "char_count": 765,
+      "word_count": 115
+    },
+    {
+      "document": "product_roadmap.pdf",
+      "section_title": "Product Development Timeline: MVP ready in 3 months, with key features rolling out quarterly...",
+      "importance_rank": 4,
+      "page_number": 2,
+      "relevance_score": 0.86,
+      "char_count": 654,
+      "word_count": 98
+    },
+    {
+      "document": "funding_strategy.pdf",
+      "section_title": "Funding Requirements: Seeking $1M seed round to fund product development and initial go-to-market...",
+      "importance_rank": 5,
+      "page_number": 1,
+      "relevance_score": 0.83,
+      "char_count": 543,
+      "word_count": 82
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "market_analysis_2025.pdf",
+      "refined_text": "Market Opportunity Analysis:\n\n- Total Addressable Market (TAM): $15B\n- Serviceable Available Market (SAM): $1.2B\n- Serviceable Obtainable Market (SOM): $120M\n\nKey Drivers:\n1. 30% YoY growth in cloud adoption\n2. Increasing demand for vertical-specific solutions\n3. Shift from on-premise to cloud-based solutions\n\nCustomer Segments:\n1. SMBs (50-250 employees) - 60% of target\n2. Mid-market (251-1000 employees) - 30%\n3. Enterprise (1000+ employees) - 10%",
+      "page_number": 2,
+      "relevance_score": 0.95
+    },
+    {
+      "document": "financial_projections.pdf",
+      "refined_text": "18-Month Financial Projections:\n\nRevenue:\n- Month 1-6: $10K MRR (growing 20% MoM)\n- Month 7-12: $30K MRR (growing 15% MoM)\n- Month 13-18: $75K MRR (growing 10% MoM)\n\nExpenses:\n- Team Salaries: $50K/month\n- Infrastructure: $5K/month\n- Marketing: $20K/month\n- Operations: $5K/month\n\nKey Metrics:\n- CAC: $1,200\n- LTV: $15,000\n- Payback Period: 8 months",
+      "page_number": 3,
+      "relevance_score": 0.92
+    },
+    {
+      "document": "competitor_analysis.pdf",
+      "refined_text": "Competitive Advantage:\n\n1. Unique Technology: Patented algorithm provides 3x performance improvement\n2. Vertical Focus: Deep specialization in healthcare sector\n3. Implementation: 50% faster deployment than competitors\n4. Pricing: 30% lower than enterprise alternatives\n\nCompetitor Comparison:\n- Competitor A: Strong in features but complex UI\n- Competitor B: Good UX but lacks advanced features\n- Competitor C: Enterprise-focused with high pricing",
+      "page_number": 1,
+      "relevance_score": 0.89
+    }
+  ]
+}
